@@ -1,25 +1,18 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
+import NavigationPane from './Navigation/NavigationPane';
+import Image from './Image/Image';
+import LinkedInLink from './Links/LinkedIn';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={'../profilepic.jpg'} width="750" height="750" alt="Profile Pic"/>
-        <p>
-          Initial creation of website using <code>create-react-app</code>
-        </p>
-        <a
-          className="App-link"
-          href="https://www.linkedin.com/in/tgwiles/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn Profile
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+    <div className="App-header">
+      <NavigationPane></NavigationPane> 
+      <Image></Image>
+      <LinkedInLink></LinkedInLink>
+    </div>)
+  }
 }
 
 export default App;
