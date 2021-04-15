@@ -1,14 +1,12 @@
 import React from 'react'
-import LinkedInLink from '../components/LinkedIn'
+import InfoSection from '../components/InfoSection'
+import { contactObj } from '../components/InfoSection/Data'
 
 const Contact = () => {
     return (
-        <div>
-            <p>
-                Here are my contacts
-            </p>
-            <LinkedInLink />
-        </div>
+        <>
+            <InfoSection {...contactObj}/>
+        </>
     )
 }
 

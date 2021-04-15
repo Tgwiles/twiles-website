@@ -1,14 +1,13 @@
 import React from 'react'
 import { FaBars } from 'react-icons/fa'
-import { Link, withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 import {
     Nav,
     NavbarContainer,
     NavLogo,
     MobileIcon,
     NavMenu,
-    NavItem,
-    //NavLinks,
+    StyledLink,
     NavBtn,
     NavBtnLink
 } from './NavbarElements'
@@ -18,41 +17,20 @@ const Navbar = (props) => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to="/">Thomas</NavLogo>
+                    <NavLogo to="/">Home</NavLogo>
                     <MobileIcon>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
-                        <NavItem>
-                            <li
-                                class={`nav-item  ${props.location.pathname === "/about" ? "active" : ""
-                                    }`}
-                            >
-                                <Link class="nav-link" to="/about">
-                                    About
-                                </Link>
-                            </li>
-                        </NavItem>
-                        <NavItem>
-                            <li
-                                class={`nav-item  ${props.location.pathname === "/projects" ? "active" : ""
-                                    }`}
-                            >
-                                <Link class="nav-link" to="/projects">
-                                    Projects
-                                </Link>
-                            </li>
-                        </NavItem>
-                        <NavItem>
-                            <li
-                                class={`nav-item  ${props.location.pathname === "/contact" ? "active" : ""
-                                    }`}
-                            >
-                                <Link class="nav-link" to="/contact">
-                                    Contact
-                                </Link>
-                            </li>
-                        </NavItem>
+                        <StyledLink to="/about" {...props.location.pathname === "/about" ? "active" : ""}>
+                            About
+                        </StyledLink>
+                        <StyledLink to="/projects" {...props.location.pathname === "/projects" ? "active" : ""}>
+                            Projects
+                        </StyledLink>
+                        <StyledLink to="/contact" {...props.location.pathname === "/contact" ? "active" : ""}>
+                            Contact
+                        </StyledLink>                        
                     </NavMenu>
                     <NavBtn>
                         <NavBtnLink to='/projects'>Projects</NavBtnLink>

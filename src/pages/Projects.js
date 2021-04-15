@@ -1,12 +1,12 @@
 import React from 'react'
+import InfoSection from '../components/InfoSection'
+import { projectsObj } from '../components/InfoSection/Data'
 
 const Projects = () => {
     return (
-        <div>
-            <p>
-            mmmmm projects yes
-            </p>
-        </div>
+        <>
+            <InfoSection {...projectsObj} />
+        </>
     )
 }
 

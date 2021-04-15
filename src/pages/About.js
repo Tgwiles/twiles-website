@@ -1,12 +1,12 @@
 import React from 'react'
+import InfoSection from '../components/InfoSection'
+import { aboutObj } from '../components/InfoSection/Data'
 
 const About = () => {
     return (
-        <div>
-            <p>
-                Here is stuff about me
-            </p>
-        </div>
+        <>
+            <InfoSection {...aboutObj} />
+        </>
     )
 }
 

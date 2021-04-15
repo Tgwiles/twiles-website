@@ -1,10 +1,13 @@
 import React from 'react'
-import Imagetile from '../components/Imagetile'
+import InfoSection from '../components/InfoSection'
+import { homeObj } from '../components/InfoSection/Data'
 
 const Home = () => {
     return (
-        <Imagetile />
-    )
+        <>
+            <InfoSection {...homeObj}/>
+        </>
+    )    
 }
 
 export default Home

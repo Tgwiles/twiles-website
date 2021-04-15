@@ -67,10 +67,6 @@ export const NavMenu = styled.ul`
     }
 `
 
-export const NavItem = styled.li`
-    height: 80px; 
-`
-
 export const NavLinks = styled(LinkS)`
     color: #fff; 
     display: flex;
@@ -112,4 +108,10 @@ export const NavBtnLink = styled(LinkR)`
          background: #fff; 
          color: #010606;
      }
-`; 
+`
+export const StyledLink = styled(LinkR)`
+  color: #01bf71;
+  font-weight: bold;
+  padding: 20px;
+  justify-self: flex-start;
+`;
