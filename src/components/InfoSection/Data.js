@@ -1,13 +1,13 @@
 export const homeObj = {
-    id: 'Intro', 
+    id: 'intro', 
     lightBg: false, 
     lightText: true, 
     lightTextDesc: true, 
-    topLine: 'Hello, there',
-    headLine: 'Welcome to my Website', 
-    description: 'In this website, I do stuff, show items, and even explain things', 
+    topLine: 'Welcome',
+    headLine: 'Thomas Website', 
+    description: 'Welcome to my personal website. My aim is to demonstrate my skills and enthusiasm for design in a visually appealing and interactive way', 
     imgStart: false, // Is image on left or right (does it start first)
-    img: process.env.PUBLIC_URL + '/images/profilepic.jpg', 
+    img: process.env.PUBLIC_URL + '/images/profilepic.png', 
     alt: 'twiles portrait',
     primary: true, 
     darkText: false
@@ -22,23 +22,8 @@ export const aboutObj = {
     headLine: 'Who am I?', 
     description: 'My name is Thomas, I am a passionate developer who was raised in the United Kingdom and moved to the US for a Computer Science degree', 
     imgStart: false, // Is image on left or right (does it start first)
-    img: process.env.PUBLIC_URL + '/images/profilepic.jpg', 
+    img: process.env.PUBLIC_URL + '/images/resume-icon.png', 
     alt: 'twiles portrait',
-    primary: true, 
-    darkText: false
-}
-
-export const projectsObj = {
-    id: 'projects', 
-    lightBg: false, 
-    lightText: true, 
-    lightTextDesc: true, 
-    topLine: 'Projects',
-    headLine: 'Here\'s what I\'ve worked on', 
-    description: 'Below is a timeline of projects that I am either working on or have completed', 
-    imgStart: true, // Is image on left or right (does it start first)
-    img: process.env.PUBLIC_URL + '/images/stanley2.JPG', 
-    alt: 'stanley2',
     primary: true, 
     darkText: false
 }
@@ -50,7 +35,7 @@ export const contactObj = {
     lightTextDesc: true, 
     topLine: 'Contact me',
     // headLine: 'Want to get in touch?', 
-    description: 'If you would like to reach out, please feel free to contact me via LinkedIn or Email', 
+    description: 'If you would like to reach out, please feel free to contact me via <a href="https://www.linkedin.com/in/tgwiles">LinkedIn</a> or <a href="mailto:thomasgwiles1@gmail.com">Email</a>', 
     imgStart: true, // Is image on left or right (does it start first)
     img: process.env.PUBLIC_URL + '/images/stanley1.JPG', 
     alt: 'Stanley', 

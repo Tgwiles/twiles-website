@@ -1,11 +1,10 @@
 import React from 'react'
-import InfoSection from '../components/InfoSection'
-import { contactObj } from '../components/InfoSection/Data'
+import Contacts from '../components/ContactSection'
 
 const Contact = () => {
     return (
         <>
-            <InfoSection {...contactObj}/>
+            <Contacts />
         </>
     )
 }

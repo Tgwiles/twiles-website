@@ -12,6 +12,7 @@ import {
     NavBtnLink
 } from './NavbarElements'
 
+//Errors to do with invalid attribute name, see: https://styled-components.com/docs/basics#passed-props
 const Navbar = (props) => {
     return (
         <>
@@ -25,15 +26,9 @@ const Navbar = (props) => {
                         <StyledLink to="/about" {...props.location.pathname === "/about" ? "active" : ""}>
                             About
                         </StyledLink>
-                        <StyledLink to="/projects" {...props.location.pathname === "/projects" ? "active" : ""}>
-                            Projects
-                        </StyledLink>
-                        <StyledLink to="/contact" {...props.location.pathname === "/contact" ? "active" : ""}>
-                            Contact
-                        </StyledLink>                        
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to='/projects'>Projects</NavBtnLink>
+                        <NavBtnLink to='/contact'>Contact</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>
