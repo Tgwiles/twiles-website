@@ -5,7 +5,7 @@ export const homeObj = {
     lightTextDesc: true, 
     topLine: 'Welcome',
     headLine: 'Thomas Website', 
-    description: 'Welcome to my personal website. My aim is to demonstrate my skills and enthusiasm for design in a visually appealing and interactive way', 
+    description: 'Welcome to my personal website. My aim is to demonstrate my skills and enthusiasm for design in a visually appealing and interactive way.\n Please note: This website is currently under development and is very much a work in progress.', 
     imgStart: false, // Is image on left or right (does it start first)
     img: process.env.PUBLIC_URL + '/images/profilepic.png', 
     alt: 'twiles portrait',

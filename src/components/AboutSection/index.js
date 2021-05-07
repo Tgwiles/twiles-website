@@ -15,11 +15,14 @@ const AboutSection = () => {
                 <SkillsList>
                     <ListItem>React.js</ListItem>
                     <ListItem>Javascript</ListItem>
+                    <ListItem>JQuery</ListItem>
+                    <ListItem>AJAX</ListItem>
                     <ListItem>HTML</ListItem>
                     <ListItem>CSS</ListItem>
-                    <ListItem>C#</ListItem>
                 </SkillsList>
                 <SkillsList>
+                    <ListItem>PHP</ListItem>
+                    <ListItem>C#</ListItem>
                     <ListItem>.NET Framework</ListItem>
                     <ListItem>Java</ListItem>
                     <ListItem>Python</ListItem>
