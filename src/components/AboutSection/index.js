@@ -1,5 +1,14 @@
 import React from 'react'
-import {AboutContainer, AboutPanel, AboutText, ListItem, ResumeImg, ResumeLink, SkillsList} from './AboutElements'
+import {
+    AboutContainer, 
+    AboutPanel, 
+    AboutText, 
+    ResumeLink,
+    ResumeImg,  
+    GridContainer,  
+    GridRow, 
+} from './AboutElements'
+import SkillsList from './SkillsGrid'
 
 const AboutSection = () => {
     return (
@@ -11,23 +20,12 @@ const AboutSection = () => {
                         <ResumeImg src={process.env.PUBLIC_URL + '/images/resume-icon.png'} alt='Resume'></ResumeImg>
                     </ResumeLink>
                 </AboutPanel>
-                <AboutPanel>
-                <SkillsList>
-                    <ListItem>React.js</ListItem>
-                    <ListItem>Javascript</ListItem>
-                    <ListItem>JQuery</ListItem>
-                    <ListItem>AJAX</ListItem>
-                    <ListItem>HTML</ListItem>
-                    <ListItem>CSS</ListItem>
-                </SkillsList>
-                <SkillsList>
-                    <ListItem>PHP</ListItem>
-                    <ListItem>C#</ListItem>
-                    <ListItem>.NET Framework</ListItem>
-                    <ListItem>Java</ListItem>
-                    <ListItem>Python</ListItem>
-                    <ListItem>SQL</ListItem>
-                </SkillsList>
+                <AboutPanel >  
+                <GridContainer>
+                    <GridRow>
+                        {SkillsList}
+                    </GridRow>
+                </GridContainer>
                 </AboutPanel>
             </AboutContainer>
         </>

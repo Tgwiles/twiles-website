@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
 export const ContactContainer = styled.div`
-    background-color: #010606; // For unsupported browsers
-    background-image: linear-gradient(#010606, #999b9b);
+    background-color: #D8E4FF; // For unsupported browsers
     height: 100vh; 
 `
 
@@ -32,7 +31,7 @@ export const ContactPanel = styled.div`
 `
 
 export const ContactText = styled.p`
-    color: #fff; 
+    color: #05386B; 
     font-size: 16px; 
     line-height: 16px; 
     font-weight: 700; 
@@ -41,9 +40,7 @@ export const ContactText = styled.p`
     text-transform: uppercase; 
     text-align: center; 
 `
-export const ContactLink = styled.a`
-
-`
+export const ContactLink = styled.a``
 
 export const ContactImg = styled.img`
     height: 70%;

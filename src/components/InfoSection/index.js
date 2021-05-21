@@ -5,30 +5,24 @@ import {
     InfoRow, 
     Column1, 
     TextWrapper, 
-    TopLine, 
     Heading, 
-    Subtitle, 
     Column2, 
-    Img, 
-    ImgWrap } from './InfoElements'
+ } from './InfoElements'
+import ScrollPanel from '../ScrollPanel'
 
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, img, alt}) => {
+const InfoSection = () => {
     return (
         <>
-            <InfoContainer lightBg={lightBg} id={id}>
+            <InfoContainer>
                 <InfoWrapper>
-                    <InfoRow imgStart={imgStart}>
+                    <InfoRow>
                         <Column1>
                             <TextWrapper>
-                                <TopLine>{topLine}</TopLine>
-                                <Heading lightText={lightText}>{headLine}</Heading>
-                                <Subtitle darktext={darkText}>{description}</Subtitle>
+                                <Heading>Hi, I'm Thomas. I like</Heading>
                             </TextWrapper>
                         </Column1>
                         <Column2>
-                            <ImgWrap>
-                                <Img src={img} alt={alt}/>
-                            </ImgWrap>
+                            <ScrollPanel/>
                         </Column2>
                     </InfoRow>
                 </InfoWrapper>

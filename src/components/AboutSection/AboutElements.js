@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
 export const AboutContainer = styled.div`
-    background-color: #010606; // For unsupported browsers
-    background-image: linear-gradient(#010606, #999b9b);
+    background-color: #D8E4FF; // For unsupported browsers
     height: 100vh; 
 `
 
 export const AboutPanel = styled.div`
     display: flex; 
     width: 50%;
+    padding-top: 5%;
     margin-left: 25%; 
     
     @media screen and (max-width: 768px) {
@@ -32,7 +32,7 @@ export const AboutPanel = styled.div`
 `
 
 export const AboutText = styled.p`
-    color: #fff; 
+    color: #05386B; 
     font-size: 16px; 
     line-height: 16px; 
     font-weight: 700; 
@@ -55,16 +55,32 @@ export const ResumeImg = styled.img`
     }
 `
 
-export const SkillsList = styled.ul`
-    color: #fff; 
-    font-size: 16px; 
-    line-height: 16px; 
-    font-weight: 700; 
-    padding-top: 50px; 
-    margin-left: auto; 
-    margin-right: auto; 
-    letter-spacing: 1.4px; 
+export const GridContainer = styled.div`
+    display:grid;
 `
-export const ListItem = styled.li`
-    padding-top: 10px; 
+
+export const GridRow = styled.div`
+    height: 100px;
+`
+
+export const InfoSquare = styled.div`
+    height: 100px;
+    width: 100px;
+    border-radius: 25px;
+    
+    background-color: #2E5EAA;
+    transition:  transform 0.1s;
+    float: left; 
+
+    &:hover {
+        transform: scale(1.25);
+        transition:  transform 0.25s;
+    }
+`
+
+export const SquareText = styled.div`
+    text-align: center;
+    color: #D8E4FF;
+    padding-top: 40px;
+    align-items: center;
 `
